@@ -6,6 +6,12 @@
   docker run --name crud_clientes -e POSTGRES_PASSWORD=1010 -e POSTGRES_USER=postgres -e POSTGRES_DB=crud_clientes -p 5090:5432 -d --restart always postgres
   ```
   *as tableas serão criadas automaticamente ao subir a aplicação pelo typeorm
+
+  ## Acesse a pasta do projeto
+  ```bash
+  cd crud_clientes
+  ```
+
   ## Instale as dependências</p>
   ```bash
   npm i
