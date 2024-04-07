@@ -27,20 +27,20 @@
   ```
   ## Execute testes de unidade do controller
   ```bash
-    npm run test -t src/modules/clientes/clientes.controller.spec.ts
+  npm run test -t src/modules/clientes/clientes.controller.spec.ts
   ```
 
   ## Execute testes de unidade do service
   ```bash
-    npm run test -t src/modules/clientes/clientes.controller.spec.ts
+  npm run test -t src/modules/clientes/clientes.service.spec.ts
   ```
   ## Execute a aplicação
   ```bash
-    npm run start
+  npm run start
   ```
   ou
   ```bash
-    npm run start:dev
+  npm run start:dev
   ```
   ## Você pode conferir a documentação em swagger acessando localhost:3000/api
 </p>
