@@ -1,43 +1,43 @@
 <p align="center">
 
-  <p align="left">Inicie o banco de dados(Docker)</p>
+  ## Inicie o banco de dados(Docker)
+
   ```bash
   docker run --name crud_clientes -e POSTGRES_PASSWORD=1010 -e POSTGRES_USER=postgres -e POSTGRES_DB=crud_clientes -p 5090:5432 -d --restart always postgres
   ```
   *as tableas serão criadas automaticamente ao subir a aplicação pelo typeorm
-  <p align="left">Instale as dependências</p>
+  ## Instale as dependências</p>
   ```bash
-    npm i
+  npm i
   ```
-  <p align="left">Defina variáveis ​​de ambiente criando arquivo .env com base no arquivo .env.example(Linux)</p>
+  ## Defina variáveis ​​de ambiente criando arquivo .env com base no arquivo .env.example(Linux)</p>
   ```bash
   cp .env.example .env
   ```
 
-  <p align="left">Defina variáveis ​​de ambiente criando arquivo .env com base no arquivo .env.example(Windows)</p>
+  ## Defina variáveis ​​de ambiente criando arquivo .env com base no arquivo .env.example(Windows)</p>
   ```bash
   copy .env.example .env
   ```
-  <p align="left">Execute testes de unidade do controller</p>
+  ## Execute testes de unidade do controller
   ```bash
     npm run test -t src/modules/clientes/clientes.controller.spec.ts
   ```
 
-  <p align="left">Execute testes de unidade do service</p>
+  ## Execute testes de unidade do service
   ```bash
     npm run test -t src/modules/clientes/clientes.controller.spec.ts
   ```
-    <p align="left">Execute a aplicação</p>
+  ## Execute a aplicação
   ```bash
     npm run start
   ```
   ou
-    ```bash
+  ```bash
     npm run start:dev
   ```
-  <p align="center">Você pode conferir a documentação em swagger acessando localhost:3000/api</p>
+  ## Você pode conferir a documentação em swagger acessando localhost:3000/api
 </p>
-
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
